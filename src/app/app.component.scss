@@ -1,0 +1,108 @@
+:host {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+  }
+  .chat-container {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+  }
+  header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  h1 {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+  }
+  .devices-container {
+    display: flex;
+    flex-grow: 1;
+  }
+  .device {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e6e6e6;
+  }
+  h2 {
+    text-align: center;
+    margin: 10px 0;
+    color: #2c3e50;
+  }
+  .message-list {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .message {
+    margin-bottom: 15px;
+    max-width: 80%;
+  }
+  .outgoing {
+    align-self: flex-end;
+  }
+  .incoming {
+    align-self: flex-start;
+  }
+  .message-content {
+    padding: 10px 15px;
+    border-radius: 18px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  .outgoing .message-content {
+    background-color: #0084ff;
+    color: white;
+  }
+  .incoming .message-content {
+    background-color: #e9e9eb;
+    color: black;
+  }
+  .message-content p {
+    margin: 0 0 5px 0;
+  }
+  .message-content small {
+    font-size: 0.75em;
+    opacity: 0.7;
+  }
+  .input-container {
+    display: flex;
+    padding: 20px;
+    border-top: 1px solid #e6e6e6;
+  }
+  input {
+    flex-grow: 1;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 16px;
+  }
+  button {
+    background-color: #0084ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  button:hover {
+    background-color: #0073e6;
+  }
